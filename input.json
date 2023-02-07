@@ -1,17 +1,17 @@
 {
     "token": "token GH_TOKEN",
     "slsa": {
-        "repository": "scribe-security/guys-slsa-test",
+        "repository": "Scribe-Demo/slsa-test-alona-stg",
         "protected_branch": "main",
         "accept_retained_indefinitely": true,
-        "repository_url": "https://github.com/scribe-security/guys-slsa-test",
+        "repository_url": "https://github.com/Scribe-Demo/slsa-test-alona-stg/",
         "build_script": "build.yml",
         "build_service": "GitHub Actions",
         "provenance": "a.prov",
         "reason_provenance_authenticated": "a.sig"
     },
     "commits": {
-        "scribe-security/guys-slsa-test": {
+        "Scribe-Demo/slsa-test-alona-stg": {
             "history": ["8eda247e57ca4202a814f5efb28d9e7a5de12cdf"]
         }
     }
