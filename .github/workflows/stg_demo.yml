@@ -44,14 +44,14 @@ jobs:
         uses: scribe-security/actions/gensbom/bom@master
         with:
           type: docker            
-          target: date:latest
+          target: mongo-express:1.0.0-alpha.4
           format: json
           verbose: 2
           force: true
           scribe-enable: true
-          product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
-          scribe-client-id: ${{ secrets.SCRIBE_DEV_M2M_CLIENT_ID }}
-          scribe-client-secret: ${{ secrets.SCRIBE_DEV_M2M_CLIENT_SECRET }}
+          product-key: ${{ secrets.SCRIBE_DEMO_PRODUCT_KEY }}
+          scribe-client-id: ${{ secrets.SCRIBE_DEMO_M2M_CLIENT_ID }}
+          scribe-client-secret: ${{ secrets.SCRIBE_DEMO_M2M_CLIENT_SECRET }}
           scribe-url: ${{ env.SCRIBE_URL }}
           scribe-login-url: ${{ env.SCRIBE_LOGIN_URL }}
           scribe-audience: ${{ env.SCRIBE_AUDIENCE }}
@@ -61,9 +61,9 @@ jobs:
         uses: scribe-security/actions/gensbom/bom@master
         with:
           type: docker
-          target: 'date:latest'
+          target: mongo-express:1.0.0-alpha.4
           format: statement-slsa
-          product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
+          product-key: ${{ secrets.SCRIBE_DEMO_PRODUCT_KEY }}
           verbose: 2
           force: true
           
