@@ -11,6 +11,9 @@ env:
 jobs:
    scribe-report-test:
     runs-on: ubuntu-latest
+    permissions:
+     id-token: write
+    
     steps:
   
       - name: create file and Docker
