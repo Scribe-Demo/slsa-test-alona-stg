@@ -64,7 +64,7 @@ jobs:
           scribe-client-secret: ${{ secrets.SCRIBE_STG_CLIENT_SECRET }}
           scribe-url: ${{ env.SCRIBE_URL }}
           scribe-login-url: ${{ env.SCRIBE_LOGIN_URL }}
-          scribe-audience: ${{ env.SCRIBE_AUDIENCE }
+          scribe-audience: ${{ env.SCRIBE_AUDIENCE }}
 
       - uses: actions/upload-artifact@v2
         with:
