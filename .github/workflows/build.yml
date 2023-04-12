@@ -57,12 +57,12 @@ jobs:
           target: date:latest
           scribe-enable: true
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
-          product-key: "00_new_slsa"
+          pproduct-key: "00_new_slsa"
           scribe-client-id: ${{ secrets.SCRIBE_STG_CLIENT_ID }}
-          scribe-client-secret: ${{ secrets.SSCRIBE_STG_CLIENT_SECRET}}
+          scribe-client-secret: ${{ secrets.SCRIBE_STG_CLIENT_SECRET }}
           scribe-url: ${{ env.SCRIBE_URL }}
           scribe-login-url: ${{ env.SCRIBE_LOGIN_URL }}
-          scribe-audience: ${{ env.SCRIBE_AUDIENCE }}
+          scribe-audience: ${{ env.SCRIBE_AUDIENCE }
 
       - uses: actions/upload-artifact@v2
         with:
