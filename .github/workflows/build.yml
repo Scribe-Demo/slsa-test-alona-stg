@@ -1,4 +1,4 @@
-name: Scribe GitHub App Workflow Demo
+name: slsa_stg_valint
 on: 
 #     push:
     workflow_dispatch:
