@@ -39,6 +39,7 @@ jobs:
            type: dir
            target: 'mongo-express-scm'
            scribe-enable: true
+           verbose: 2
 #            product-key: ${{ secrets.SCRIBE_STG_PRODUCT_KEY }}
            product-key: "00_new_slsa"
            scribe-client-id: ${{ secrets.SCRIBE_STG_CLIENT_ID }}
@@ -56,6 +57,7 @@ jobs:
           type: docker # To be included only if you want to to use docker daemon to access the image (for example, creating your docker image locally)
           target: date:latest
           scribe-enable: true
+          verbose: 2
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
           pproduct-key: "00_new_slsa"
           scribe-client-id: ${{ secrets.SCRIBE_STG_CLIENT_ID }}
@@ -74,13 +76,14 @@ jobs:
              - uses: actions/checkout@v2
               with:
               fetch-depth: 0
+              
       - name: Generate SLSA provenance statement
         id: valint_slsa_statement
         uses: scribe-security/action-bom@master
         with:
           type: docker
           target: 'date:latest'
-#           format: statement-slsa
+          format: statement-slsa
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
           product-key: "00_new_slsa"
 
