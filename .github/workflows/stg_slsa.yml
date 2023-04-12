@@ -41,7 +41,7 @@ jobs:
            scribe-enable: true
            verbose: 2
 #            product-key: ${{ secrets.SCRIBE_STG_PRODUCT_KEY }}
-           product-key: "00000_new_slsa"
+           product-key: abacb74e-f81b-4ed1-abd6-52abe4192d3d
            scribe-client-id: ${{ secrets.SCRIBE_STG_CLIENT_ID }}
            scribe-client-secret: ${{ secrets.SCRIBE_STG_CLIENT_SECRET }}
            scribe-url: ${{ env.SCRIBE_URL }}
@@ -59,7 +59,7 @@ jobs:
           scribe-enable: true
           verbose: 2
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
-          pproduct-key: "00000_new_slsa"
+          pproduct-key: abacb74e-f81b-4ed1-abd6-52abe4192d3d
           scribe-client-id: ${{ secrets.SCRIBE_STG_CLIENT_ID }}
           scribe-client-secret: ${{ secrets.SCRIBE_STG_CLIENT_SECRET }}
           scribe-url: ${{ env.SCRIBE_URL }}
@@ -85,7 +85,7 @@ jobs:
           target: 'date:latest'
           format: statement-slsa
 #           product-key: ${{ secrets.SCRIBE_DEV_PRODUCT_KEY }}
-          product-key: "00000_new_slsa"
+          product-key: abacb74e-f81b-4ed1-abd6-52abe4192d3d
 
       - uses: actions/upload-artifact@v2
         with:
